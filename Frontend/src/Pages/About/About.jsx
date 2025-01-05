@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Calendar, Users, MapPin, Trophy, Check, ArrowRight } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
 
 const About = () => {
   const { isDarkMode } = useTheme();
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   const milestones = [
     {
